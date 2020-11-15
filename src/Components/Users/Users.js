@@ -28,11 +28,7 @@ export default class Users extends Component {
     render() {
         return (
             <div>
-                {this.state.users.map(user => (
-                    <div key={user.id}>
-                        <UserIterm key={user.id}  user={user}  />
-                    </div>
-                ))}
+                <UserIterm  user={this.state.users} />
             </div>
         )
     }
