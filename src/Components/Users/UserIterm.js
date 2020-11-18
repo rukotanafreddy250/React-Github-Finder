@@ -30,5 +30,3 @@ export default class UserIterm extends Component {
         )
     }
 }
-
-
