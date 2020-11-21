@@ -26,10 +26,11 @@ export default class Users extends Component {
     }
 
     render() {
-        return (
+        
+        return this.state.users.map((user) => (
             <div>
-                <UserIterm  user={this.state.users} />
+                {user.id}
             </div>
-        )
+        ))
     }
 }

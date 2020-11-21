@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import Users from "./Users"
-export default class UserIterm extends Component {
+export  class UserIterm extends Component {
     // constructor() {
     //     super();
     //     this.state = {
@@ -11,11 +11,11 @@ export default class UserIterm extends Component {
     //     }
     // }
 
-    state = {
-        login: "aholachek",
-        avatar_url: "https://avatars2.githubusercontent.com/u/3680488?v=4",
-        html_url: "https://github.com/aholachek"
-    }    
+    // state = {
+    //     login: "aholachek",
+    //     avatar_url: "https://avatars2.githubusercontent.com/u/3680488?v=4",
+    //     html_url: "https://github.com/aholachek"
+    // }    
     render() {
         // const {id, login, avatar_url, html_url} = this.props.user;
         console.log(this.props.user);
@@ -30,3 +30,5 @@ export default class UserIterm extends Component {
         )
     }
 }
+
+export default UserIterm;
