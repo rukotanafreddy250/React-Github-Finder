@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import Users from "./Users"
-export  class UserIterm extends Component {
+ const UserIterm = ( props /*{ user: { id, login, avatar_url, html_url} }*/ ) => {
+
     // constructor() {
     //     super();
     //     this.state = {
@@ -16,19 +17,21 @@ export  class UserIterm extends Component {
     //     avatar_url: "https://avatars2.githubusercontent.com/u/3680488?v=4",
     //     html_url: "https://github.com/aholachek"
     // }    
-    render() {
-        // const {id, login, avatar_url, html_url} = this.props.user;
-        console.log(this.props.user);
+        const { id, login, avatar_url, html_url} = props.user;
+        
+
+        // console.log(props.user);
         return (
             <div className="text-center"> 
-                <h2>{this.props.login}</h2>
-                <img src={this.props.avatar_url} alt="" className='rounded-circle' style={{  width: '90px'}} />
+                <h2>{id}</h2>
+                <h2>{login}</h2>
+                <img src={avatar_url} alt="" className='rounded-circle' style={{  width: '90px'}} />
                 <div>
-                    <a className='btn btn-dark btn-sm my-1' href={this.props.html_url}>More</a>
+                    <a className='btn btn-dark btn-sm my-1' href={html_url}>More</a>
                 </div>
             </div>
         )
-    }
+
 }
 
 export default UserIterm;
